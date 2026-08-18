@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "coq_nvim": {
+      "rev": "46c9880110511bcfe8598d368de07b8c488d1d19",
+      "src": "https://github.com/ms-jpq/coq_nvim"
+    },
     "flash.nvim": {
       "rev": "b6346946d10d07998efee029fb0f7a593806d0cd",
       "src": "https://github.com/folke/flash.nvim"
