@@ -83,13 +83,13 @@ local MiniExtra = require("mini.extra")
 MiniPick.setup()
 MiniExtra.setup()
 
-vim.keymap.set("n", "<leader>ff", function() MiniPick.builtin.files() end, { desc = "Mini File Picker" })
-vim.keymap.set("n", "<leader>fg", function() MiniPick.builtin.grep({ pattern = vim.fn.expand("<cword>") }) end, { desc = "Grep word/Search word" })
-vim.keymap.set("n", "<leader>fh", function() MiniPick.builtin.buffers() end, { desc = "Mini Buffers" })
+-- vim.keymap.set("n", "<leader>ff", function() MiniPick.builtin.files() end, { desc = "Mini File Picker" })
+-- vim.keymap.set("n", "<leader>fg", function() MiniPick.builtin.grep({ pattern = vim.fn.expand("<cword>") }) end, { desc = "Grep word/Search word" })
+-- vim.keymap.set("n", "<leader>fh", function() MiniPick.builtin.buffers() end, { desc = "Mini Buffers" })
 vim.keymap.set("n", "<leader>vh", function() MiniPick.builtin.help() end, { desc = "Mini Help" })
 
-vim.keymap.set("n", "<leader>fd", function() MiniExtra.pickers.diagnostic() end, { desc = "Mini Picker Diagnostics" })
-vim.keymap.set("n", "<leader>fk", function() MiniExtra.pickers.keymaps() end, { desc = "Search keymaps"})
+-- vim.keymap.set("n", "<leader>fd", function() MiniExtra.pickers.diagnostic() end, { desc = "Mini Picker Diagnostics" })
+-- vim.keymap.set("n", "<leader>fk", function() MiniExtra.pickers.keymaps() end, { desc = "Search keymaps"})
 
 --- mini completions ---
 local MiniCompletion = require("mini.completion")

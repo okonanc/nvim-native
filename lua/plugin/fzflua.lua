@@ -1,0 +1,11 @@
+vim.pack.add({"https://github.com/ibhagwan/fzf-lua"})
+local fzflua = require("fzf-lua")
+
+fzflua.setup({
+
+})
+vim.keymap.set("n", "<leader>ff", function() fzflua.files() end, { desc = "FZF File Picker" })
+vim.keymap.set("n", "<leader>fg", function() fzflua.live_grep() end, { desc = "FZF Live Grep" })
+vim.keymap.set("n", "<leader>fh", function() fzflua.buffers() end, { desc = "FZF File Buffers" })
+vim.keymap.set("n", "<leader>fd", function() fzflua.diagnostics_workspace() end, { desc = "Mini Picker Diagnostics" })
+vim.keymap.set("n", "<leader>fk", function() fzflua.keymaps() end, { desc = "Search keymaps"})
