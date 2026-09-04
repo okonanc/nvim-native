@@ -23,6 +23,8 @@ vim.o.smarttab = true
 vim.o.smartcase = true
 vim.o.autoindent = true
 
+vim.o.ignorecase = true
+
 -- Save undo history
 vim.o.undofile = true
 vim.o.undodir = vim.fn.stdpath("data") .. "/undodir" -- os.getenv("HOME") .. "/.local/state/nvim/undodir"
